@@ -2,7 +2,6 @@ import React from "react";
 // eslint-disable-next-line no-unused-vars
 import ReactDOM from "react-dom";
 import { Toolbar, Col, Page, Row, Button } from "react-onsenui";
-import "../style.css";
 import topimg from "../assets/images/topimg_quiz1.jpg";
 
 export default class QuizPage extends React.Component {
@@ -14,8 +13,8 @@ export default class QuizPage extends React.Component {
             <div className="center">クイズ</div>
           </Toolbar>
         )}>
+        <img src={topimg} alt="topimg" />
         <div className="container">
-          <img src={topimg} alt="topimg" />
           <h3 className="outlined-secondary">
             <span id="qa_num">3/10問目</span>
           </h3>

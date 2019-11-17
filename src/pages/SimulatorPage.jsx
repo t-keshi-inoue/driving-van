@@ -1,8 +1,7 @@
 import React from "react";
 // eslint-disable-next-line no-unused-vars
 import ReactDOM from "react-dom";
-import { Toolbar, Page } from "react-onsenui";
-import "../style.css";
+import { Toolbar, Page, Button } from "react-onsenui";
 import topimg from "../assets/images/topimg_check.jpg";
 
 export default class SimulatorPage extends React.Component {
@@ -110,7 +109,7 @@ export default class SimulatorPage extends React.Component {
             />
             Drive
           </fieldset>
-          <button className="btn_darkblue">登録</button>
+          <Button className="btn_primary">登録</Button>
         </section>
       </Page>
     );

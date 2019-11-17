@@ -4,6 +4,7 @@ import React from "react";
 // eslint-disable-next-line no-unused-vars
 import ReactDOM from "react-dom";
 import ons from "onsenui";
+import "./css/style.css";
 
 // Onsen UI Styling and Icons
 require("onsenui/css-components-src/src/onsen-css-components.css");

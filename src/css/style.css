@@ -7,8 +7,19 @@ body {
   padding: 0;
 }
 
+img {
+  width: 100vw;
+  height: auto;
+}
+
 .title {
   text-align: center;
+  font-weight: bold;
+}
+
+.lead {
+  text-align: center;
+  line-height: 1.5em;
 }
 
 .primary-color {
@@ -46,7 +57,7 @@ small {
   font-size: 0.2rem;
 }
 span {
-  font-size: 0.5rem;
+  font-size: 2em;
 }
 
 /***************
@@ -164,12 +175,10 @@ span {
   left: 0px;
 }
 
-.bg_home {
-  position: absolute;
-  top: -100px;
-  left: 00px;
-  margin: 0;
-  padding: 0;
+.card-media {
+  width: 90vw;
+  height: auto;
+  margin: 10px, 10px, 10px, 10px;
 }
 
 /**************************
@@ -183,6 +192,26 @@ span {
 /**************************
 *クイズページ
 ***************************/
+
+.result-a {
+  color: palevioletred;
+}
+
+.result-b {
+  color: blue;
+}
+
+.result-c {
+  color: green;
+}
+
+.result-d {
+  color: purple;
+}
+
+.result-e {
+  color: red;
+}
 
 /***************
 *結果ページ
