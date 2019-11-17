@@ -17,8 +17,8 @@
     "monaca:transpile": "npm run build",
     "monaca:debug": "npm run watch",
     "dev": "webpack-serve --open",
-    "build": "webpack --mode production",
-    "watch": "webpack --watch --mode production"
+    "build": "webpack --mode production node_modules/node-sass/bin/node-sass --include-path scss scss/style.scss www/css/style.css",
+    "watch": "webpack --watch --mode production node_modules/nodemon/bin/nodemon.js -e scss -x \"npm run build\""
   },
   "cordova": {
     "plugins": {

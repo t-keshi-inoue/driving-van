@@ -9,10 +9,10 @@ export default class HomePage extends React.Component {
       <Page
         renderToolbar={() => (
           <Toolbar>
-            <div className="center">Title</div>
+            <div className="center">優良運転者チェッカー</div>
           </Toolbar>
         )}>
-        <div>Home Page</div>
+        <div className="red">Home Page</div>
       </Page>
     );
   }
