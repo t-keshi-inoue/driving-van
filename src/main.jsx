@@ -1,23 +1,22 @@
-import "react-hot-loader/patch";
-import { AppContainer } from "react-hot-loader";
-import React from "react";
+import 'react-hot-loader/patch';
+import { AppContainer } from 'react-hot-loader';
+import React from 'react';
 // eslint-disable-next-line no-unused-vars
-import ReactDOM from "react-dom";
-import ons from "onsenui";
-import "./css/style.css";
+import ReactDOM from 'react-dom';
+import ons from 'onsenui';
 
 // Onsen UI Styling and Icons
-require("onsenui/css-components-src/src/onsen-css-components.css");
-require("onsenui/css/onsenui.css");
+require('onsenui/css-components-src/src/onsen-css-components.css');
+require('onsenui/css/onsenui.css');
 
-import App from "./App";
+import App from './App';
 
 if (ons.platform.isIPhoneX()) {
-  document.documentElement.setAttribute("onsflag-iphonex-portrait", "");
-  document.documentElement.setAttribute("onsflag-iphonex-landscape", "");
+  document.documentElement.setAttribute('onsflag-iphonex-portrait', '');
+  document.documentElement.setAttribute('onsflag-iphonex-landscape', '');
 }
 
-const rootElement = document.getElementById("app");
+const rootElement = document.getElementById('app');
 ReactDOM.render(
   <AppContainer>
     <App />
@@ -26,8 +25,8 @@ ReactDOM.render(
 );
 
 if (module.hot) {
-  module.hot.accept("./App", () => {
-    const NextApp = require("./App").default;
+  module.hot.accept('./App', () => {
+    const NextApp = require('./App').default;
     ReactDOM.render(
       <AppContainer>
         <NextApp />

@@ -1,9 +1,9 @@
-import React from "react";
+import React from 'react';
 // eslint-disable-next-line no-unused-vars
-import ReactDOM from "react-dom";
-import { Toolbar, Button, Page } from "react-onsenui";
-import topimg from "../assets/images/topimg_Score.jpg";
-import road from "../assets/images/img_road.jpg";
+import ReactDOM from 'react-dom';
+import { Toolbar, Button, Page } from 'react-onsenui';
+import topimg from '../assets/images/topimg_Score.jpg';
+import road from '../assets/images/img_road.jpg';
 
 export default class DrivingScorePage extends React.Component {
   render() {
@@ -30,10 +30,12 @@ export default class DrivingScorePage extends React.Component {
           <h2>
             <span className="result-d">D</span>判定(83箇所対象)
           </h2>
-          <Button onclick="kako()">問題箇所リスト</Button>
-          <Button modifier="quiet" onclick="kako()">
-            過去の診断結果を見る
-          </Button>
+          <div className="btn-container">
+            <Button onclick="kako()">問題箇所リスト</Button>
+            <Button modifier="quiet" onclick="kako()">
+              過去の診断結果を見る
+            </Button>
+          </div>
         </div>
       </Page>
     );

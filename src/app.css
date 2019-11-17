@@ -2,6 +2,8 @@
 *共通
 ***************************/
 
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+JP&display=swap");
+
 body {
   margin: 0;
   padding: 0;
@@ -26,7 +28,7 @@ img {
   color: #081a51;
 }
 .secondary-color {
-  color: #a52a24;
+  color: #ddbab8;
 }
 .light {
   color: #fff;
@@ -37,6 +39,7 @@ img {
 
 html {
   font-size: 32px;
+  font-family: "Noto Sans JP", sans-serif;
 }
 h1 {
   font-size: 2rem;
@@ -60,9 +63,24 @@ span {
   font-size: 2em;
 }
 
-/***************
-*共通余白
-****************/
+/**************************
+*共通レイアウト
+***************************/
+
+.container {
+  margin: 10px;
+}
+
+.btn-container {
+  margin: 10px 0;
+}
+
+.centering {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
 .space_h10 {
   height: 10px;
 }
@@ -176,7 +194,7 @@ span {
 }
 
 .card-media {
-  width: 90vw;
+  width: 80vw;
   height: auto;
   margin: 10px, 10px, 10px, 10px;
 }
@@ -188,6 +206,10 @@ span {
 /**************************
 *シュミレーター
 ***************************/
+
+fieldset {
+  font-size: 0.5rem;
+}
 
 /**************************
 *クイズページ

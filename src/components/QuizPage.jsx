@@ -1,8 +1,8 @@
-import React from "react";
+import React from 'react';
 // eslint-disable-next-line no-unused-vars
-import ReactDOM from "react-dom";
-import { Toolbar, Col, Page, Row, Button } from "react-onsenui";
-import topimg from "../assets/images/topimg_quiz1.jpg";
+import ReactDOM from 'react-dom';
+import { Toolbar, Col, Page, Row, Button } from 'react-onsenui';
+import topimg from '../assets/images/topimg_quiz1.jpg';
 
 export default class QuizPage extends React.Component {
   render() {
@@ -16,31 +16,31 @@ export default class QuizPage extends React.Component {
         <img src={topimg} alt="topimg" />
         <div className="container">
           <h3 className="outlined-secondary">
-            <span id="qa_num">3/10問目</span>
+            <span>3</span>/10問目
           </h3>
-          <span id="swing-long-result" className="quiz_description">
+          <p className="quiz_description">
             右左折などをしようとするときの合図は、その行為をしようとする約３秒前に出す。
-          </span>
+          </p>
           <Row>
             <Col>
-              <div className="choice">
-                <Button className="button button--large--cta">○</Button>
-              </div>
+              <Button modifier="large">
+                <span>○</span>
+              </Button>
             </Col>
             <Col>
-              <div className="choice">
-                <Button className="button button--large--cta">×</Button>
-              </div>
+              <Button modifier="large--cta">
+                <span>✖︎</span>
+              </Button>
             </Col>
           </Row>
         </div>
         <div className="container">
           <h3 className="result_title">
-            <span id="qa_num">正解は「×」</span>
+            正解は<span>×</span>
           </h3>
-          <span id="swing-long-result" className="quiz_description">
+          <p className="quiz_description">
             右左折しようとする３０メートル手前の地点で合図を出します。
-          </span>
+          </p>
         </div>
       </Page>
     );

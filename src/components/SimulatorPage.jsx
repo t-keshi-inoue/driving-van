@@ -1,8 +1,8 @@
-import React from "react";
+import React from 'react';
 // eslint-disable-next-line no-unused-vars
-import ReactDOM from "react-dom";
-import { Toolbar, Page, Button } from "react-onsenui";
-import topimg from "../assets/images/topimg_check.jpg";
+import ReactDOM from 'react-dom';
+import { Toolbar, Page, Button } from 'react-onsenui';
+import topimg from '../assets/images/topimg_check.jpg';
 
 export default class SimulatorPage extends React.Component {
   render() {
@@ -15,10 +15,10 @@ export default class SimulatorPage extends React.Component {
           </Toolbar>
         )}>
         <img src={topimg} alt="check" />
-        <section id="simulator">
+        <div className="container">
           <h3>
             SDL Simulator <br />
-            <small>SDL Bootcamp に送信</small>
+            <small>スマホにリンクします。</small>
           </h3>
           <fieldset>
             <legend>RPM</legend>
@@ -46,7 +46,7 @@ export default class SimulatorPage extends React.Component {
           </fieldset>
 
           <fieldset>
-            <legend>Acc Pedal Position</legend>
+            <legend>アクセルペダルの位置</legend>
             <input
               type="range"
               value="0"
@@ -59,7 +59,7 @@ export default class SimulatorPage extends React.Component {
           </fieldset>
 
           <fieldset>
-            <legend>Electronic Park Brake Status</legend>
+            <legend>ブレーキの状態</legend>
             <input
               type="Radio"
               name="electronicParkBrakeStatus"
@@ -78,7 +78,7 @@ export default class SimulatorPage extends React.Component {
           </fieldset>
 
           <fieldset>
-            <legend>PRNDL</legend>
+            <legend>ギアチェンジ</legend>
             <input
               type="Radio"
               name="prndl"
@@ -109,8 +109,10 @@ export default class SimulatorPage extends React.Component {
             />
             Drive
           </fieldset>
-          <Button className="btn_primary">登録</Button>
-        </section>
+          <div className="btn-container">
+            <Button className="button--cta">登録</Button>
+          </div>
+        </div>
       </Page>
     );
   }
