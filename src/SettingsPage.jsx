@@ -1,20 +1,18 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import {Page, Toolbar} from 'react-onsenui';
+import React from "react";
+// eslint-disable-next-line no-unused-vars
+import ReactDOM from "react-dom";
+import { Page, Toolbar } from "react-onsenui";
 
 export default class SettingsPage extends React.Component {
   render() {
     return (
       <Page
-        renderToolbar={() =>
+        renderToolbar={() => (
           <Toolbar>
-            <div className='center'>Title</div>
+            <div className="center">Title</div>
           </Toolbar>
-        }
-      >
-        <div>
-          Settings Page
-        </div>
+        )}>
+        <div>Settings Page</div>
       </Page>
     );
   }
