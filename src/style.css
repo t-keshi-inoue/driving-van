@@ -1,0 +1,189 @@
+/**************************
+*共通
+***************************/
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.title {
+  text-align: center;
+}
+
+.primary-color {
+  color: #081a51;
+}
+.secondary-color {
+  color: #a52a24;
+}
+.light {
+  color: #fff;
+}
+.dark {
+  color: #000;
+}
+
+html {
+  font-size: 32px;
+}
+h1 {
+  font-size: 2rem;
+}
+h2 {
+  font-size: 1.5rem;
+}
+h3 {
+  font-size: 1rem;
+}
+h4 {
+  font-size: 0.5rem;
+}
+p {
+  font-size: 0.5rem;
+}
+small {
+  font-size: 0.2rem;
+}
+span {
+  font-size: 0.5rem;
+}
+
+/***************
+*共通余白
+****************/
+.space_h10 {
+  height: 10px;
+}
+.space_h20 {
+  height: 20px;
+}
+.space_h30 {
+  height: 30px;
+}
+.space_h50 {
+  height: 50px;
+}
+.space_h100 {
+  height: 100px;
+}
+.space_h200 {
+  height: 200px;
+}
+
+/***************
+*ボタン
+****************/
+
+.btn_primary {
+  color: #fff;
+  border-radius: 6px;
+  background-color: #081a51;
+}
+
+/***************
+*ボタン
+****************/
+
+.btn_primary {
+  color: #fff;
+  border-radius: 6px;
+  background-color: #081a51;
+}
+
+.btn_secondary {
+  color: #fff;
+  border-radius: 6px;
+  background-color: #a52a24;
+}
+
+.btn_outlined_primary {
+  color: #081a51;
+  border-radius: 6px;
+  border-color: #081a51;
+  border: 2px solid;
+}
+
+.btn_outlined_primary {
+  color: #081a51;
+  border-radius: 6px;
+  border-color: #081a51;
+  border: 2px solid;
+}
+
+/***************
+*テキスト
+****************/
+
+.bg_primary {
+  color: #fff;
+  border-radius: 6px;
+  background-color: #081a51;
+}
+
+.bg_secondary {
+  color: #fff;
+  border-radius: 6px;
+  background-color: #a52a24;
+}
+
+.outlined_primary {
+  color: #081a51;
+  border-radius: 6px;
+  border-color: #081a51;
+  border: 2px solid;
+}
+
+.outlined_primary {
+  color: #081a51;
+  border-radius: 6px;
+  border-color: #081a51;
+  border: 2px solid;
+}
+
+/**************************
+*ツールバー
+***************************/
+
+.toolbar {
+  background-color: #081a51;
+}
+
+.toolbar-title {
+  text-align: center;
+}
+
+/**************************
+*HOME
+***************************/
+.logo {
+  text-align: center;
+  position: relative;
+  width: 70%;
+  top: 280px;
+  left: 0px;
+}
+
+.bg_home {
+  position: absolute;
+  top: -100px;
+  left: 00px;
+  margin: 0;
+  padding: 0;
+}
+
+/**************************
+*チェック
+***************************/
+
+/**************************
+*シュミレーター
+***************************/
+
+/**************************
+*クイズページ
+***************************/
+
+/***************
+*結果ページ
+****************/

@@ -3,8 +3,11 @@ import React from "react";
 import ReactDOM from "react-dom";
 import { Tabbar, Tab } from "react-onsenui";
 
-import HomePage from "./HomePage";
-import SettingsPage from "./SettingsPage";
+import HomePage from "./pages/HomePage";
+import SettingsPage from "./pages/SettingsPage";
+import QuizPage from "./pages/QuizPage";
+import SimulatorPage from "./pages/SimulatorPage";
+import DrivingScorePage from "./pages/DrivingScorePage";
 
 export default class App extends React.Component {
   renderTabs() {
@@ -16,6 +19,18 @@ export default class App extends React.Component {
       {
         content: <SettingsPage />,
         tab: <Tab label="Settings" icon="md-settings" />,
+      },
+      {
+        content: <QuizPage />,
+        tab: <Tab label="Quiz" icon="md-settings" />,
+      },
+      {
+        content: <SimulatorPage />,
+        tab: <Tab label="Simulator" icon="md-settings" />,
+      },
+      {
+        content: <DrivingScorePage />,
+        tab: <Tab label="DrivingScore" icon="md-settings" />,
       },
     ];
   }
