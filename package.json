@@ -11,7 +11,9 @@
     "onsenui": "2.10.8",
     "react": "^16.8.6",
     "react-dom": "^16.4.1",
-    "react-onsenui": "^1.11.2"
+    "react-onsenui": "^1.11.2",
+    "com.jins_jp.meme.plugin": "git+https://github.com/jins-meme/JinsMemeSDK-Plugin-Cordova",
+    "cordova.plugins.diagnostic": "git+https://github.com/dpa99c/cordova-diagnostic-plugin"
   },
   "scripts": {
     "monaca:preview": "npm run dev & npm run watch",
@@ -26,7 +28,9 @@
       "cordova-custom-config": {},
       "cordova-plugin-splashscreen": {},
       "cordova-plugin-whitelist": {},
-      "monaca-plugin-monaca-core": {}
+      "monaca-plugin-monaca-core": {},
+      "com.jins_jp.meme.plugin": {},
+      "cordova.plugins.diagnostic": {}
     }
   },
   "devDependencies": {

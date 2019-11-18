@@ -9,7 +9,7 @@ body {
   padding: 0;
 }
 
-img {
+.img__top {
   width: 100vw;
   height: auto;
 }

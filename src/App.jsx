@@ -8,6 +8,7 @@ import QuizPage from './components/QuizPage';
 import SimulatorPage from './components/SimulatorPage';
 import DrivingScorePage from './components/DrivingScorePage';
 import OnDrivingPage from './components/OnDrivingPage';
+import JinsMemePage from './components/JinsMemePage';
 
 import './app.css';
 
@@ -33,6 +34,10 @@ export default class App extends React.Component {
       {
         content: <OnDrivingPage />,
         tab: <Tab label="OnDriving" icon="md-car" />,
+      },
+      {
+        content: <JinsMemePage />,
+        tab: <Tab label="JinsMeme" icon="md-car" />,
       },
     ];
   }

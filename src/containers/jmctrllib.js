@@ -162,7 +162,7 @@ export const jmctrllib = (function() {
 
     getSequentialEyeMove(data) {
       gb.rt_cnt_em += 1;
-      let em_min_th = 1;
+      const em_min_th = 1;
       //lalteral
       if (data.eyeMoveRight > em_min_th || data.eyeMoveLeft > em_min_th) {
         gb.em_lat_cnt += 1;
@@ -219,8 +219,8 @@ export const jmctrllib = (function() {
       gb.wa_accy = gb.wa_accy * 0.9 + data.accY * 0.1; //wa Y
       gb.wa_accz = gb.wa_accz * 0.9 + data.accZ * 0.1; //wa Z
       const tilt = Math.atan2(gb.wa_accy, -1 * gb.wa_accz) * 57.3;
-      
-return tilt;
+
+      return tilt;
     },
   };
 })();
