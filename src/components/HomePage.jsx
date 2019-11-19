@@ -1,19 +1,16 @@
 import React, { useState } from 'react';
 // eslint-disable-next-line no-unused-vars
 import ReactDOM from 'react-dom';
-import { Button, Page, Toolbar, Card, Dialog } from 'react-onsenui';
+import { Button, Page, Card, Dialog } from 'react-onsenui';
 import logo from '../assets/images/logo.png';
+import Hamburger from './layout/Hamburger';
 
 const HomePage = () => {
   const [open, setOpen] = useState(false);
 
   return (
-    <Page
-      renderToolbar={() => (
-        <Toolbar>
-          <div className="center">優良運転者チェッカー</div>
-        </Toolbar>
-      )}>
+    <Page>
+      <Hamburger />
       <div className="container">
         <Card>
           <h3 className="title">Happy Driving!</h3>
